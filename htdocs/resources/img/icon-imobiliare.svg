@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000151511693934153399270000009638506363042464644_);}
+	.st1{clip-path:url(#SVGID_00000176003856022977510310000004957427339491017882_);}
+	.st2{opacity:0.7;}
+	.st3{clip-path:url(#SVGID_00000070833016796247848280000014958107436155834279_);}
+	.st4{fill:#FFFFFF;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="14" y="21.2" width="36" height="21.6"/>
+	</defs>
+	<clipPath id="SVGID_00000001658447965159322630000004007550982334714036_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g id="Group_36" style="clip-path:url(#SVGID_00000001658447965159322630000004007550982334714036_);">
+		<g id="Group_35">
+			<g>
+				<defs>
+					<rect id="SVGID_00000003793351262545209530000018060513958721769877_" x="14" y="21.2" width="36" height="21.6"/>
+				</defs>
+				<clipPath id="SVGID_00000022546607815609258190000010349572543435153336_">
+					<use xlink:href="#SVGID_00000003793351262545209530000018060513958721769877_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="Group_34" style="clip-path:url(#SVGID_00000022546607815609258190000010349572543435153336_);">
+					<g id="Group_33" class="st2">
+						<g id="Group_32">
+							<g>
+								<defs>
+									<rect id="SVGID_00000104677888425512177920000016911029146061539987_" x="28.1" y="21.2" width="21.9" height="21.6"/>
+								</defs>
+								<clipPath id="SVGID_00000133507520751325655050000013672296797073330878_">
+									<use xlink:href="#SVGID_00000104677888425512177920000016911029146061539987_"  style="overflow:visible;"/>
+								</clipPath>
+								<g id="Group_31" style="clip-path:url(#SVGID_00000133507520751325655050000013672296797073330878_);">
+									<path id="Path_23" class="st4" d="M39.1,21.2l-10.9,7.6v14h7.7v-5.2c0-0.8,0.3-1.6,0.9-2.2c1.3-1.2,3.3-1.2,4.5,0
+										c0.6,0.6,0.9,1.4,0.9,2.2v5.2H50v-14L39.1,21.2z"/>
+								</g>
+							</g>
+						</g>
+					</g>
+					<path id="Path_24" class="st4" d="M24.9,21.2L14,28.8v14h7.7v-8.1c0-0.8,0.3-1.6,0.9-2.2c1.3-1.2,3.3-1.2,4.5,0
+						c0.6,0.6,0.9,1.4,0.9,2.2v8.1h7.7v-14L24.9,21.2z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

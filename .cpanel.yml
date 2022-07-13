@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/r101299prop/public_html/
+    - /bin/cp -R htdocs $DEPLOYPATH

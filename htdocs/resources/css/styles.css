@@ -1,0 +1,112 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #103E52;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background-color: #0B2B39;
+}
+@media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
+  .header {
+    height: 200px;
+  }
+}
+.header .logo {
+  width: 350px;
+  height: 100px;
+  background: url(../img/logo-color-dark-bg.svg) no-repeat center center;
+}
+@media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
+  .header .logo {
+    width: 260px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+}
+@media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
+  .main {
+    padding: 40px 20px;
+  }
+}
+.main .row {
+  display: flex;
+  width: 840px;
+}
+@media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
+  .main .row {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.main .row .col {
+  flex: 1;
+  height: 120px;
+  margin: 0 20px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
+  .main .row .col {
+    margin: 0;
+  }
+}
+.main .row .col .button-with-icon {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.main .row .col .button-with-icon .icon {
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+  border: 3px solid #fff;
+  border-radius: 2px;
+}
+.main .row .col .button-with-icon .icon.imobiliare {
+  background: url(../img/icon-imobiliare.svg) no-repeat center center;
+}
+.main .row .col .button-with-icon .icon.youtube {
+  background: url(../img/icon-youtube.svg) no-repeat center center;
+}
+.main .row .col .button-with-icon .icon.facebook {
+  background: url(../img/icon-facebook.svg) no-repeat center center;
+}
+.main .row .col .button-with-icon .icon.email {
+  background: url(../img/icon-email.svg) no-repeat center center;
+}
+.main .row .col:only-child .text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.main .row:first-child .col {
+  border-top: 3px solid rgba(255, 255, 255, 0.1);
+}/*# sourceMappingURL=styles.css.map */
