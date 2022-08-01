@@ -8,6 +8,14 @@ body {
   font-weight: 300;
   color: #fff;
 }
+@media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
+  html,
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
 
 a {
   color: #fff;
@@ -16,6 +24,11 @@ a {
 }
 a:hover {
   opacity: 0.7;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  a:hover {
+    opacity: 1;
+  }
 }
 
 .header {
@@ -46,7 +59,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px;
+  padding: 60px;
 }
 @media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
   .main {
@@ -74,15 +87,14 @@ a:hover {
     margin: 0;
   }
 }
-.main .row .col .button-with-icon {
+.main .row .col .container-with-icon {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 120px;
-  padding: 0 30px;
+  padding: 30px;
   box-sizing: border-box;
 }
-.main .row .col .button-with-icon .icon {
+.main .row .col .container-with-icon .icon {
   margin-right: 20px;
   width: 64px;
   height: 64px;
@@ -90,17 +102,26 @@ a:hover {
   border: 3px solid #fff;
   border-radius: 2px;
 }
-.main .row .col .button-with-icon .icon.imobiliare {
+.main .row .col .container-with-icon .icon.imobiliare {
   background: url(../img/icon-imobiliare.svg) no-repeat center center;
 }
-.main .row .col .button-with-icon .icon.youtube {
+.main .row .col .container-with-icon .icon.youtube {
   background: url(../img/icon-youtube.svg) no-repeat center center;
 }
-.main .row .col .button-with-icon .icon.facebook {
+.main .row .col .container-with-icon .icon.facebook {
   background: url(../img/icon-facebook.svg) no-repeat center center;
 }
-.main .row .col .button-with-icon .icon.email {
+.main .row .col .container-with-icon .icon.email {
   background: url(../img/icon-email.svg) no-repeat center center;
+}
+.main .row .col .container-with-icon .icon.phone {
+  background: url(../img/icon-phone.svg) no-repeat center center;
+}
+.main .row .col .container-with-icon .icon.whatsapp {
+  background: url(../img/icon-whatsapp.svg) no-repeat center center;
+}
+.main .row .col .container-with-icon .icon.telegram {
+  background: url(../img/icon-telegram.svg) no-repeat center center;
 }
 .main .row .col:only-child .text {
   flex: 1;
@@ -109,4 +130,51 @@ a:hover {
 }
 .main .row:first-child .col {
   border-top: 3px solid rgba(255, 255, 255, 0.1);
+}
+.main .row.phone-row {
+  margin-top: 40px;
+  border: none;
+}
+.main .row.phone-row .col {
+  background-color: #0B2B39;
+  border-radius: 2px;
+}
+.main .row.phone-row .col .container-with-icon {
+  padding-right: 262px;
+  align-items: flex-start;
+}
+@media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
+  .main .row.phone-row .col .container-with-icon {
+    flex-direction: column-reverse;
+    padding-right: 30px;
+  }
+}
+.main .row.phone-row .col .container-with-icon .icons-container {
+  display: flex;
+}
+@media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
+  .main .row.phone-row .col .container-with-icon .icons-container {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+.main .row.phone-row .col .container-with-icon .icon.phone, .main .row.phone-row .col .container-with-icon .icon.whatsapp {
+  margin-right: 10px;
+}
+@media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
+  .main .row.phone-row .col .container-with-icon .icon.telegram {
+    margin-right: 0;
+  }
+}
+.main .row.phone-row .col .container-with-icon .text {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+@media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
+  .main .row.phone-row .col .container-with-icon .text {
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -8,6 +8,10 @@ body {
     background-color: $page-background-color;
     @include main-font(24px, 300);
     color: $text-color;
+
+    @include phone-portrait {
+        @include main-font(20px, 300);
+    }
 }
 
 a {
@@ -17,6 +21,10 @@ a {
 
     &:hover {
         opacity: .7;
+
+        @include phone {
+            opacity: 1;
+        }    
     }
 }
 
@@ -47,7 +55,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px;
+    padding: 60px;
 
     @include phone-portrait {
         padding: 40px 20px;
@@ -72,12 +80,11 @@ a {
                 margin: 0;
             }
 
-            & .button-with-icon {
+            & .container-with-icon {
                 display: flex;
                 align-items: center;
                 width: 100%;
-                height: 120px;
-                padding: 0 30px;
+                padding: 30px;
                 box-sizing: border-box;
 
                 & .icon {
@@ -103,6 +110,18 @@ a {
                     &.email {
                         background: url(../img/icon-email.svg) no-repeat center center;
                     }
+
+                    &.phone {
+                        background: url(../img/icon-phone.svg) no-repeat center center;
+                    }
+
+                    &.whatsapp {
+                        background: url(../img/icon-whatsapp.svg) no-repeat center center;
+                    }
+
+                    &.telegram {
+                        background: url(../img/icon-telegram.svg) no-repeat center center;
+                    }
                 }
             }
 
@@ -118,6 +137,60 @@ a {
         &:first-child {
             & .col {
                 border-top: 3px solid $border-color;                
+            }
+        }
+
+        &.phone-row {
+            margin-top: 40px;
+            border: none;
+    
+            & .col {
+                background-color: $phone-container-background-color;
+                border-radius: 2px;
+
+                & .container-with-icon {
+                    padding-right: 262px;
+                    align-items: flex-start;
+
+                    @include phone-portrait {
+                        flex-direction: column-reverse;
+                        padding-right: 30px;
+                    }
+
+                    & .icons-container {
+                        display: flex;
+
+                        @include phone-portrait {
+                            margin-top: 20px;
+                            width: 100%;
+                            justify-content: center;
+                        }
+                    }
+            
+                    & .icon {
+                        &.phone,
+                        &.whatsapp {
+                            margin-right: 10px;
+                        }
+
+                        &.telegram {
+                            @include phone-portrait {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+            
+                    & .text {
+                        font-weight: 700;
+                        display: flex;
+                        align-items: center;
+                        height: 64px;
+
+                        @include phone-portrait {
+                            width: 100%;
+                        }
+                    }
+                }
             }
         }
     }

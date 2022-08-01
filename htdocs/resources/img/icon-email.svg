@@ -4,26 +4,28 @@
 	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{clip-path:url(#SVGID_00000163049577091146486880000009562606402535053498_);}
+	.st1{clip-path:url(#SVGID_00000079482446967760696630000016927077592903363004_);}
 </style>
 <g id="Group_25" transform="translate(0 0)">
-	<path id="Path_9" class="st0" d="M16.1,20.3L32,34.4l15.9-14.1H16.1z"/>
+	<path id="Path_9" class="st0" d="M16.1,20.3L32,34.4l15.9-14.1C47.9,20.3,16.1,20.3,16.1,20.3z"/>
 	<path id="Path_10" class="st0" d="M14,42.3L14,42.3l12.3-9.6L14,21.9V42.3z"/>
 	<g id="Group_24">
 		<g>
-			<defs>
-				<rect id="SVGID_1_" x="14" y="20.3" width="36" height="23.5"/>
-			</defs>
-			<clipPath id="SVGID_00000151516523277820005660000003299019204917186957_">
-				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-			</clipPath>
-			<g id="Group_23" style="clip-path:url(#SVGID_00000151516523277820005660000003299019204917186957_);">
-				<path id="Path_11" class="st0" d="M32.9,37.1c-0.5,0.4-1.2,0.4-1.7,0l-2.9-2.6l-11.8,9.2h31.2l-11.8-9.2L32.9,37.1z"/>
-				<path id="Path_12" class="st0" d="M50,42.3V21.9L37.7,32.8L50,42.3z"/>
-				<path id="Path_13" class="st0" d="M47.9,20.3L32,34.4L16.1,20.3H47.9z"/>
-				<path id="Path_14" class="st0" d="M14,42.3V21.9l12.3,10.9L14,42.3L14,42.3z"/>
-				<path id="Path_15" class="st0" d="M16.4,43.7L16.4,43.7l11.8-9.2l2.9,2.6c0.5,0.4,1.2,0.4,1.7,0l2.9-2.6l11.8,9.2H16.4z"/>
-				<path id="Path_16" class="st0" d="M50,42.3L50,42.3l-12.3-9.5L50,21.9V42.3z"/>
+			<g>
+				<defs>
+					<rect id="SVGID_1_" x="14" y="20.3" width="36" height="23.5"/>
+				</defs>
+				<clipPath id="SVGID_00000166672393420273039540000005044117796166184078_">
+					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="Group_23" style="clip-path:url(#SVGID_00000166672393420273039540000005044117796166184078_);">
+					<path id="Path_11" class="st0" d="M32.9,37.1c-0.5,0.4-1.2,0.4-1.7,0l-2.9-2.6l-11.8,9.2h31.2l-11.8-9.2L32.9,37.1z"/>
+					<path id="Path_12" class="st0" d="M50,42.3V21.9L37.7,32.8L50,42.3z"/>
+					<path id="Path_13" class="st0" d="M47.9,20.3L32,34.4L16.1,20.3H47.9z"/>
+					<path id="Path_14" class="st0" d="M14,42.3V21.9l12.3,10.9L14,42.3L14,42.3z"/>
+					<path id="Path_15" class="st0" d="M16.4,43.7L16.4,43.7l11.8-9.2l2.9,2.6c0.5,0.4,1.2,0.4,1.7,0l2.9-2.6l11.8,9.2H16.4z"/>
+					<path id="Path_16" class="st0" d="M50,42.3L50,42.3l-12.3-9.5L50,21.9V42.3z"/>
+				</g>
 			</g>
 		</g>
 	</g>
