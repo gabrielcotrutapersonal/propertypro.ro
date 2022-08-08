@@ -6,12 +6,8 @@ body {
     margin: 0;
     height: 100%;
     background-color: $page-background-color;
-    @include main-font(24px, 300);
+    @include main-font(20px, 300);
     color: $text-color;
-
-    @include phone-portrait {
-        @include main-font(20px, 300);
-    }
 }
 
 a {
@@ -28,12 +24,26 @@ a {
     }
 }
 
+h1 {
+    margin: 0 0 20px;
+    max-width: 825px;
+    padding: 0 10px 30px;
+    box-sizing: border-box;
+    @include main-font(23px, 400, 31px);
+    text-align: center;
+
+    @include phone {
+        margin-bottom: 10px;
+        @include main-font(20px, 400, 28px);
+    }
+}
+
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 300px;
+    height: 200px;
     background-color: $header-background-color;
 
     @include phone-portrait {
@@ -42,7 +52,7 @@ a {
 
     & .logo {
         width: 350px;
-        height: 100px;
+        height: 90px;
         background: url(../img/logo-color-dark-bg.svg) no-repeat center center;
 
         @include phone-portrait {
@@ -55,7 +65,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px;
+    padding: 50px;
 
     @include phone-portrait {
         padding: 40px 20px;
@@ -89,6 +99,7 @@ a {
 
                 & .icon {
                     margin-right: 20px;
+                    min-width: 64px;
                     width: 64px;
                     height: 64px;
                     box-sizing: border-box;
@@ -123,6 +134,10 @@ a {
                         background: url(../img/icon-telegram.svg) no-repeat center center;
                     }
                 }
+
+                @include phone {
+                    padding: 20px 30px;
+                }
             }
 
             &:only-child {
@@ -134,9 +149,15 @@ a {
             }
         }
 
-        &:first-child {
+        &:first-of-type {
             & .col {
-                border-top: 3px solid $border-color;                
+                border-top: 3px solid $border-color;
+
+                &:last-child {
+                    @include phone-portrait {
+                        border-top: none;
+                    }
+                }
             }
         }
 

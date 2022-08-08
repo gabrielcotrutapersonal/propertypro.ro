@@ -4,17 +4,9 @@ body {
   height: 100%;
   background-color: #103E52;
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   color: #fff;
-}
-@media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
-  html,
-body {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-  }
 }
 
 a {
@@ -31,12 +23,33 @@ a:hover {
   }
 }
 
+h1 {
+  margin: 0 0 20px;
+  max-width: 825px;
+  padding: 0 10px 30px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  h1 {
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}
+
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 200px;
   background-color: #0B2B39;
 }
 @media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
@@ -46,7 +59,7 @@ a:hover {
 }
 .header .logo {
   width: 350px;
-  height: 100px;
+  height: 90px;
   background: url(../img/logo-color-dark-bg.svg) no-repeat center center;
 }
 @media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
@@ -59,7 +72,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px;
+  padding: 50px;
 }
 @media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
   .main {
@@ -96,6 +109,7 @@ a:hover {
 }
 .main .row .col .container-with-icon .icon {
   margin-right: 20px;
+  min-width: 64px;
   width: 64px;
   height: 64px;
   box-sizing: border-box;
@@ -123,13 +137,23 @@ a:hover {
 .main .row .col .container-with-icon .icon.telegram {
   background: url(../img/icon-telegram.svg) no-repeat center center;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main .row .col .container-with-icon {
+    padding: 20px 30px;
+  }
+}
 .main .row .col:only-child .text {
   flex: 1;
   display: flex;
   justify-content: center;
 }
-.main .row:first-child .col {
+.main .row:first-of-type .col {
   border-top: 3px solid rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
+  .main .row:first-of-type .col:last-child {
+    border-top: none;
+  }
 }
 .main .row.phone-row {
   margin-top: 40px;
