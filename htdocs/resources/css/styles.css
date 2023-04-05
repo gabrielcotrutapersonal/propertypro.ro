@@ -3,7 +3,7 @@ body {
   margin: 0;
   height: 100%;
   background-color: #103E52;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 300;
   color: #fff;
@@ -12,11 +12,13 @@ body {
 a {
   color: #fff;
   text-decoration: none;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity .2s ease-in-out;
 }
+
 a:hover {
-  opacity: 0.7;
+  opacity: .7;
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
   a:hover {
     opacity: 1;
@@ -28,16 +30,17 @@ h1 {
   max-width: 825px;
   padding: 0 10px 30px;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 23px;
   font-weight: 400;
   line-height: 31px;
   text-align: center;
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
   h1 {
     margin-bottom: 10px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -52,16 +55,19 @@ h1 {
   height: 200px;
   background-color: #0B2B39;
 }
+
 @media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
   .header {
     height: 200px;
   }
 }
+
 .header .logo {
   width: 350px;
   height: 90px;
   background: url(../img/logo-color-dark-bg.svg) no-repeat center center;
 }
+
 @media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
   .header .logo {
     width: 260px;
@@ -74,32 +80,38 @@ h1 {
   align-items: center;
   padding: 50px;
 }
+
 @media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
   .main {
     padding: 40px 20px;
   }
 }
+
 .main .row {
   display: flex;
   width: 840px;
 }
+
 @media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
   .main .row {
     width: 100%;
     flex-direction: column;
   }
 }
+
 .main .row .col {
   flex: 1;
   height: 120px;
   margin: 0 20px;
   border-bottom: 3px solid rgba(255, 255, 255, 0.1);
 }
+
 @media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
   .main .row .col {
     margin: 0;
   }
 }
+
 .main .row .col .container-with-icon {
   display: flex;
   align-items: center;
@@ -107,6 +119,13 @@ h1 {
   padding: 30px;
   box-sizing: border-box;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main .row .col .container-with-icon {
+    padding: 20px 30px;
+  }
+}
+
 .main .row .col .container-with-icon .icon {
   margin-right: 20px;
   min-width: 64px;
@@ -116,66 +135,61 @@ h1 {
   border: 3px solid #fff;
   border-radius: 2px;
 }
-.main .row .col .container-with-icon .icon.imobiliare {
-  background: url(../img/icon-imobiliare.svg) no-repeat center center;
-}
-.main .row .col .container-with-icon .icon.youtube {
-  background: url(../img/icon-youtube.svg) no-repeat center center;
-}
-.main .row .col .container-with-icon .icon.facebook {
-  background: url(../img/icon-facebook.svg) no-repeat center center;
-}
-.main .row .col .container-with-icon .icon.email {
-  background: url(../img/icon-email.svg) no-repeat center center;
-}
+
 .main .row .col .container-with-icon .icon.phone {
   background: url(../img/icon-phone.svg) no-repeat center center;
 }
+
 .main .row .col .container-with-icon .icon.whatsapp {
   background: url(../img/icon-whatsapp.svg) no-repeat center center;
 }
+
 .main .row .col .container-with-icon .icon.telegram {
   background: url(../img/icon-telegram.svg) no-repeat center center;
 }
-@media (min-width: 320px) and (max-width: 767px) {
-  .main .row .col .container-with-icon {
-    padding: 20px 30px;
-  }
-}
+
 .main .row .col:only-child .text {
   flex: 1;
   display: flex;
   justify-content: center;
 }
+
 .main .row:first-of-type .col {
   border-top: 3px solid rgba(255, 255, 255, 0.1);
 }
+
 @media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
   .main .row:first-of-type .col:last-child {
     border-top: none;
   }
 }
+
 .main .row.phone-row {
   margin-top: 40px;
   border: none;
 }
+
 .main .row.phone-row .col {
   background-color: #0B2B39;
   border-radius: 2px;
 }
+
 .main .row.phone-row .col .container-with-icon {
   padding-right: 262px;
   align-items: flex-start;
 }
+
 @media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
   .main .row.phone-row .col .container-with-icon {
     flex-direction: column-reverse;
     padding-right: 30px;
   }
 }
+
 .main .row.phone-row .col .container-with-icon .icons-container {
   display: flex;
 }
+
 @media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
   .main .row.phone-row .col .container-with-icon .icons-container {
     margin-top: 20px;
@@ -183,22 +197,186 @@ h1 {
     justify-content: center;
   }
 }
+
 .main .row.phone-row .col .container-with-icon .icon.phone, .main .row.phone-row .col .container-with-icon .icon.whatsapp {
   margin-right: 10px;
 }
+
 @media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
   .main .row.phone-row .col .container-with-icon .icon.telegram {
     margin-right: 0;
   }
 }
+
 .main .row.phone-row .col .container-with-icon .text {
   font-weight: 700;
   display: flex;
   align-items: center;
   height: 64px;
 }
+
 @media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
   .main .row.phone-row .col .container-with-icon .text {
     width: 100%;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+body.page-homepage .main .row .col .container-with-icon .icon.imobiliare {
+  background: url(../img/icon-imobiliare.svg) no-repeat center center;
+}
+
+body.page-homepage .main .row .col .container-with-icon .icon.youtube {
+  background: url(../img/icon-youtube.svg) no-repeat center center;
+}
+
+body.page-homepage .main .row .col .container-with-icon .icon.facebook {
+  background: url(../img/icon-facebook.svg) no-repeat center center;
+}
+
+body.page-homepage .main .row .col .container-with-icon .icon.email {
+  background: url(../img/icon-email.svg) no-repeat center center;
+}
+
+body.page-homepage .main .row.new-row .col .container-with-icon {
+  color: #e4c278;
+}
+
+body.page-homepage .main .row.new-row .col .container-with-icon .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: #e4c278;
+  font-weight: 700;
+  color: #e4c278;
+}
+
+body.page-bnb .main .row.thumbs-row {
+  width: 800px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body.page-bnb .main .row.thumbs-row {
+    width: 100%;
+  }
+}
+
+body.page-bnb .main .row.thumbs-row .col {
+  margin: 5px;
+  height: auto;
+  border: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body.page-bnb .main .row.thumbs-row .col {
+    margin: 5px 0;
+  }
+}
+
+body.page-bnb .main .row.thumbs-row .col .img {
+  height: 385px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body.page-bnb .main .row.thumbs-row .col .img {
+    height: calc(100vw - 40px);
+  }
+}
+
+body.page-bnb .main .row.thumbs-row .col:nth-child(1) {
+  flex-grow: 2;
+}
+
+body.page-bnb .main .row.thumbs-row .col:nth-child(1) .img {
+  background-image: url(../img/photos/airbnb-01/01.jpeg);
+  border-radius: 3px 0 0 3px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body.page-bnb .main .row.thumbs-row .col:nth-child(1) .img {
+    border-radius: 3px 3px 0 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body.page-bnb .main .row.thumbs-row .col:nth-child(2) {
+    display: flex;
+  }
+}
+
+body.page-bnb .main .row.thumbs-row .col:nth-child(2) .img {
+  width: 192.5px;
+  height: 187.5px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body.page-bnb .main .row.thumbs-row .col:nth-child(2) .img {
+    width: calc(50% - 5px);
+  }
+}
+
+body.page-bnb .main .row.thumbs-row .col:nth-child(2) .img:nth-child(1) {
+  margin-bottom: 10px;
+  background-image: url(../img/photos/airbnb-01/02.jpeg);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body.page-bnb .main .row.thumbs-row .col:nth-child(2) .img:nth-child(1) {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}
+
+body.page-bnb .main .row.thumbs-row .col:nth-child(2) .img:nth-child(2) {
+  background-image: url(../img/photos/airbnb-01/03.jpeg);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body.page-bnb .main .row.thumbs-row .col:nth-child(3) {
+    display: flex;
+  }
+}
+
+body.page-bnb .main .row.thumbs-row .col:nth-child(3) .img {
+  width: 192.5px;
+  height: 187.5px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body.page-bnb .main .row.thumbs-row .col:nth-child(3) .img {
+    width: calc(50% - 5px);
+  }
+}
+
+body.page-bnb .main .row.thumbs-row .col:nth-child(3) .img:nth-child(1) {
+  margin-bottom: 10px;
+  background-image: url(../img/photos/airbnb-01/04.jpeg);
+  border-radius: 0 3px 0 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body.page-bnb .main .row.thumbs-row .col:nth-child(3) .img:nth-child(1) {
+    margin-bottom: 0;
+    margin-right: 10px;
+    border-radius: 0 0 0 3px;
+  }
+}
+
+body.page-bnb .main .row.thumbs-row .col:nth-child(3) .img:nth-child(2) {
+  background-image: url(../img/photos/airbnb-01/05.jpeg);
+  border-radius: 0 0 3px 0;
+}
+
+body.page-bnb .main .row.thumbs-row .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}

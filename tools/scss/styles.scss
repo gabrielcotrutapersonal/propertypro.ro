@@ -1,6 +1,7 @@
 @import "include/variables";
 @import "include/mixins";
 
+// START Common elements
 html,
 body {
     margin: 0;
@@ -37,7 +38,9 @@ h1 {
         @include main-font(20px, 400, 28px);
     }
 }
+// END Common elements
 
+// START All pages
 .header {
     display: flex;
     flex-direction: column;
@@ -97,6 +100,10 @@ h1 {
                 padding: 30px;
                 box-sizing: border-box;
 
+                @include phone {
+                    padding: 20px 30px;
+                }
+
                 & .icon {
                     margin-right: 20px;
                     min-width: 64px;
@@ -105,22 +112,6 @@ h1 {
                     box-sizing: border-box;
                     border: 3px solid $icon-border-color;
                     border-radius: 2px;
-
-                    &.imobiliare {
-                        background: url(../img/icon-imobiliare.svg) no-repeat center center;
-                    }
-
-                    &.youtube {
-                        background: url(../img/icon-youtube.svg) no-repeat center center;
-                    }
-
-                    &.facebook {
-                        background: url(../img/icon-facebook.svg) no-repeat center center;
-                    }
-
-                    &.email {
-                        background: url(../img/icon-email.svg) no-repeat center center;
-                    }
 
                     &.phone {
                         background: url(../img/icon-phone.svg) no-repeat center center;
@@ -133,10 +124,6 @@ h1 {
                     &.telegram {
                         background: url(../img/icon-telegram.svg) no-repeat center center;
                     }
-                }
-
-                @include phone {
-                    padding: 20px 30px;
                 }
             }
 
@@ -216,3 +203,177 @@ h1 {
         }
     }
 }
+// END All pages
+
+// START Homepage
+body.page-homepage {
+    & .main {
+        & .row {
+            & .col {
+                & .container-with-icon {
+                    & .icon {    
+                        &.imobiliare {
+                            background: url(../img/icon-imobiliare.svg) no-repeat center center;
+                        }
+    
+                        &.youtube {
+                            background: url(../img/icon-youtube.svg) no-repeat center center;
+                        }
+    
+                        &.facebook {
+                            background: url(../img/icon-facebook.svg) no-repeat center center;
+                        }
+    
+                        &.email {
+                            background: url(../img/icon-email.svg) no-repeat center center;
+                        }
+                    }  
+                }
+            }
+    
+            &.new-row {
+                & .col {
+                    & .container-with-icon {
+                        color: $highlight-color;
+    
+                        & .icon {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-color: $highlight-color;
+                            font-weight: 700;
+                            color: $highlight-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// END Homepage
+body.page-bnb {
+    & .main {
+        & .row {
+            &.thumbs-row {
+                width: 800px;
+                flex-wrap: wrap;
+
+                @include phone {
+                    width: 100%;
+                }
+
+                & .col {
+                    margin: 5px;
+                    height: auto;
+                    border: none;
+
+                    @include phone {
+                        margin: 5px 0;
+                    }
+
+                    & .img {
+                        height: 385px;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+
+                        @include phone {
+                            height: calc(100vw - 40px);
+                        }
+                    }
+                    
+                    &:nth-child(1) {
+                        flex-grow: 2;
+                        
+                        @include phone {
+                        }
+
+                        & .img {
+                            background-image: url(../img/photos/airbnb-01/01.jpeg);
+                            border-radius: 3px 0 0 3px;
+
+                            @include phone {
+                                border-radius: 3px 3px 0 0;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        @include phone {
+                            display: flex;
+                        }
+
+                        & .img {
+                            width: 192.5px;
+                            height: 187.5px;
+
+                            @include phone {
+                                width: calc(50% - 5px);
+                            }
+
+                            &:nth-child(1) {
+                                margin-bottom: 10px;
+                                background-image: url(../img/photos/airbnb-01/02.jpeg);
+                                
+                                @include phone {
+                                    margin-bottom: 0;
+                                    margin-right: 10px;
+                                }
+                            }
+                            
+                            &:nth-child(2) {
+                                background-image: url(../img/photos/airbnb-01/03.jpeg);
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        @include phone {
+                            display: flex;
+                        }
+
+                        & .img {
+                            width: 192.5px;
+                            height: 187.5px;
+
+                            @include phone {
+                                width: calc(50% - 5px);
+                            }
+
+                            &:nth-child(1) {
+                                margin-bottom: 10px;
+                                background-image: url(../img/photos/airbnb-01/04.jpeg);
+                                border-radius: 0 3px 0 0;
+
+                                @include phone {
+                                    margin-bottom: 0;
+                                    margin-right: 10px;
+                                    border-radius: 0 0 0 3px;
+                                }
+                            }
+                            
+                            &:nth-child(2) {
+                                background-image: url(../img/photos/airbnb-01/05.jpeg);
+                                border-radius: 0 0 3px 0;
+                            }
+                        }
+                    }
+                }
+
+                & .cta {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    padding: 30px;
+                    box-sizing: border-box;
+                    border-bottom: 3px solid $border-color;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+// START Bnb
+// END Bnb
+
